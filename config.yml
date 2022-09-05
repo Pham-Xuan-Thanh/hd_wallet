@@ -1,0 +1,4 @@
+version: 1.0
+blockchain:
+  token: "406ff270cbb3474bbec83af155356dec"
+port: 50005
