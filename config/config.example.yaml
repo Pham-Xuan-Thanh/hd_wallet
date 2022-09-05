@@ -1,0 +1,4 @@
+version: Test
+blockchain:
+  token: "abcdefghijklmnoprstuvwyz"
+port: 1000
