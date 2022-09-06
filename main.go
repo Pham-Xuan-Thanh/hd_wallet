@@ -18,7 +18,7 @@ var conf = config.ParseConfig()
 func main() {
 	listenner, err := net.Listen("tcp", fmt.Sprintf(":%s", conf.Port))
 	if err != nil {
-		log.Fatal("Fail to listen: %v ", err)
+		log.Fatal("Fail to listen:  ", err)
 	}
 
 	s := grpc.NewServer()
@@ -29,6 +29,6 @@ func main() {
 	fmt.Printf("Server running at port: %s\n", conf.Port)
 
 	if err := s.Serve(listenner); err != nil {
-		log.Fatal("Fail to establish server: %v", err)
+		log.Fatal("Fail to establish server: ", err)
 	}
 }
